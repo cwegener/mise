@@ -224,3 +224,4 @@ jobs:
       - run: echo "$PWD/target/debug" >> "$GITHUB_PATH"
       - run: cargo test
         continue-on-error: true
+      - run: pwsh e2e-win/run_all.ps1
